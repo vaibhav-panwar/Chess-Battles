@@ -1,4 +1,3 @@
-# healthy-discovery-1593
 # Chess Battles
 
 ![Chess](Screenshots/logo.png)
