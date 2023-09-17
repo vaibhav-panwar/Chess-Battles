@@ -1,0 +1,182 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* carousel css */
+
+.carousel-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* main css */
+
+.mainContainer {
+  width: 60%;
+  margin: auto;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+
+.mainContainer>div {
+  height: 100%;
+  width: 100%;
+}
+
+.mainContainer>.rightdiv>img {
+  width: 100%;
+}
+
+.mainContainer>.leftdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: whitesmoke;
+  gap: 10px;
+  color: green;
+  padding: 10px;
+}
+
+#btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+
+}
+
+.btn1,
+.btn2 {
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  background-color: rgb(241, 187, 86);
+  transition: all 0.2s;
+}
+
+.btn1:hover,
+.btn2:hover {
+  width: 120px;
+  height: 34px;
+  font-size: 20px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.active {
+  width: 120px;
+  height: 34px;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+
+#cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+form>input {
+  width: 200px;
+  height: 30px;
+  margin: 10px 0px;
+  border: 2px solid black;
+  font-size: 15px;
+  padding: 5px;
+  outline: none;
+  color: black;
+  background: none;
+}
+
+form>input::placeholder {
+  color: black;
+}
+
+
+.sub {
+  background-color: #96bc4b;
+}
+
+.sub:hover {
+  cursor: pointer;
+}
+
+label {
+  color: black;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#google_btn {
+  background-color: rgb(172, 210, 172);
+  padding: 8px 10px;
+  background-color: #007bff;
+  border-radius: 3px;
+  color: white;
+}
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+  .mainContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 500px 400px;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 400px 300px;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  .mainContainer>.leftdiv a {
+    font-size: 10px;
+  }
+}

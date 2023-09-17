@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="./css/navbar.css">
+		<title>Chess Battles</title>
+	</head>
+	<body>
+		<header>
+			<div class="navbar">
+				<div class="logo"><a href="#">Chess Battles</a></div>
+				<ul class="links">
+					<li><a href="articles">Articles</a></li>
+					<li><a href="aboutus">About Us</a></li>
+					<li><a href="contact">Contact</a></li>
+				</ul>
+				<a href="#" class="action_btn">Play Game</a>
+				<div class="toggle_btn">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+	
+			<div class="dropdown_menu">
+				<li><a href="articles">Articles</a></li>
+				<li><a href="aboutus">About Us</a></li>
+				<li><a href="contact">Contact</a></li>
+				<li> <a href="#" class="action_btn">Play Game</a></li>
+			</div>
+		</header>
+
+
+		<div class="join-container">
+			<header class="join-header">
+				<h1>Chess Battles</h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="room">Room</label>
+						<input type="text" name="room" id="room" placeholder="Enter room name">
+					</div>
+					<button type="submit" class="btn">Join Game</button>
+				</form>
+			</main>
+		</div>
+	</body>
+	<script>
+		const toggleBtn=document.querySelector(`.toggle_btn`)
+const toggleBtnIcon=document.querySelector(`.toggle_btn i`)
+const dropDownMenu=document.querySelector(`.dropdown_menu`)
+
+toggleBtn.onclick=function(){
+    dropDownMenu.classList.toggle(`open`)
+    const isOpen=dropDownMenu.classList.contains(`open`)
+
+    toggleBtnIcon.classList=isOpen
+        ? `fa-solid fa-xmark`
+        : `fa-solid fa-bars`
+}
+
+	</script>
+</html>

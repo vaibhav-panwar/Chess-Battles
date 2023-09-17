@@ -1,0 +1,79 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.mainContainer > div {
+  width: 25%;
+  padding: 20px;
+  border-radius: 7px;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  gap: 20px;
+}
+
+.mainContainer > div > img {
+  width: 20%;
+}
+
+.mainContainer > div > form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.mainContainer > div > form > input {
+  padding: 7px;
+  text-align: center;
+  width: 100%;
+  outline: none;
+}
+
+.mainContainer > div > form > #register {
+  background-color: green;
+  background-color: #007bff;
+  border: none;
+  padding: 8px 10px;
+  width: 80%;
+  border-radius: 7px;
+  letter-spacing: 1px;
+  margin-top: 7px;
+  color: white;
+}
+
+.mainContainer > div > form > #register:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.mainContainer > div > a {
+  color: red;
+  color: #333;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+  .mainContainer > div {
+    width: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContainer > div {
+    width: 80%;
+  }
+}

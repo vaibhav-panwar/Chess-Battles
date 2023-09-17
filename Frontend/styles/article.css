@@ -1,0 +1,71 @@
+main{
+  padding: 0px 20px 20px 20px;
+  color:  wheat;
+}
+main>div{
+  display: flex;
+  width: 100%;
+  margin: 10px 0px
+}
+main>div>h1{
+  font-size: 20px;
+  margin: 5px 0px;
+}
+main>div>p{
+  width: 80%;
+  font-size: 18px;
+  margin: 5px 10px 0px 0px ;
+}
+main>div>img{
+  width: 30%;
+  height: 40vh;
+}
+
+
+/* styles.css */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  /* body {
+    padding: 10px;
+  } */
+  
+  header h1 {
+    font-size: 24px;
+  }
+
+  main section {
+    margin-bottom: 30px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15
+}

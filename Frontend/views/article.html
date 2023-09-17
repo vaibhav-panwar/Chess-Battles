@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/article.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <title>Game Rules</title>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script> -->
+
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="../index.html">Chess Battles</a></div>
+      <ul class="links">
+        <li><a href="../views/article.html" id="gamerules">Game Rules</a></li>
+        <li><a href="../views/about.html" id="aboutus">About Us</a></li>
+        <li><a href="../views/contact.html" id="contact">Contact</a></li>
+      </ul>
+      <a href="#" class="action_btn" id="playgame1">Play Game</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li><a href="../views/article.html" id="gamerules">Game Rules</a></li>
+      <li><a href="../views/about.html" id="aboutus">About Us</a></li>
+      <li><a href="../views/contact.html" id="contact">Contact</a></li>
+      <a href="#" class="action_btn" id="playgame2">Play Game</a>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="intro">Introduction</h1>
+    <div class="introduction">
+      <p>The rules of chess (also known as the laws of chess) govern the play of the game of chess. Chess is a
+        two-player
+        abstract strategy board game. Each player controls sixteen pieces of six types on a chessboard. Each type of
+        piece moves
+        in a distinct way. The object of the game is to checkmate the opponent's king; checkmate occurs when a king is
+        threatened with capture and has no escape. A game can end in various ways besides checkmate: a player can
+        resign, and
+        there are several ways a game can end in a draw. <br>
+        While the exact origins of chess are unclear, modern rules first took form during the Middle Ages. The rules
+        continued
+        to be slightly modified until the early 19th century, when they reached essentially their current form. The
+        rules also
+        varied somewhat from region to region. Today, the standard rules are set by FIDE (Fédération Internationale des
+        Échecs),
+        the international governing body for chess. Slight modifications are made by some national organizations for
+        their own
+        purposes. There are variations of the rules for fast chess, correspondence chess, online chess, and Chess960.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/ChessSet.jpg/375px-ChessSet.jpg"
+        alt="chessboard">
+    </div>
+    <h1 class="ini">Initial Setup</h1>
+    <div class="initial">
+      <p>Chess is played on a chessboard, a square board divided into a grid of 64 squares (eight-by-eight) of
+        alternating color
+        (similar to the board used in draughts). Regardless of the actual colors of the board, the lighter-colored
+        squares
+        are called "light" or "white", and the darker-colored squares are called "dark" or "black". Sixteen "white" and
+        sixteen
+        "black" pieces are placed on the board at the beginning of the game. The board is placed so that a white square
+        is in
+        each player's near-right corner. Horizontal rows are called ranks, and vertical columns are called files. <br>
+        Each player controls sixteen pieces: <br>
+        At the beginning of the game, the pieces are arranged as shown in the diagram: for each side one king, one
+        queen, two
+        rooks, two bishops, two knights, and eight pawns. The pieces are placed, one per square, as follows: <br>
+
+        Rooks are placed on the outside corners, right and left edge. <br>
+        Knights are placed immediately inside of the rooks. <br>
+        Bishops are placed immediately inside of the knights. <br>
+        The queen is placed on the central square of the same color of that of the piece: white queen on the white
+        square and
+        black queen on the black square. <br>
+        The king takes the vacant spot next to the queen.<br>
+        Pawns are placed one square in front of all of the other pieces.<br>
+        Popular mnemonics used to remember the setup are "queen on her own color" and "white on right".The latter refers
+        to
+        setting up the board so that the square closest to each player's right is white.
+      </p>
+      <img
+        src="data:image/png;base64,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"
+        alt="inital positions">
+    </div>
+    <h1 class="game">GamePlay</h1>
+    <div class="gameplay">
+      <p>The player controlling the white pieces is named "White"; the player controlling the black pieces is named
+        "Black".
+        White moves first, then players alternate moves. Making a move is required; it is not legal to skip a move, even
+        when
+        having to move is detrimental. Play continues until a king is checkmated, a player resigns, or a draw is
+        declared, as
+        explained below. In addition, if the game is being played under a time control, a player who exceeds the time
+        limit
+        loses the game unless they cannot be checkmated.
+
+        The official chess rules do not include a procedure for determining who plays White. Instead, this decision is
+        left open
+        to tournament-specific rules (e.g. a Swiss system tournament or round-robin tournament) or, in the case of
+        non-competitive play, mutual agreement, in which case some kind of random choice is often employed. A common
+        method is
+        for one player to conceal a piece (usually a pawn) of each color in either hand; the other player chooses a hand
+        to open
+        and receives the color of the piece that is revealed.</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Chess_players_in_park%2C_kiev.JPG/330px-Chess_players_in_park%2C_kiev.JPG"
+        alt="">
+    </div>
+  </main>
+
+
+
+  <footer class="footer">
+    <div id="Fmain">
+      <div class="bottom">
+        <ul>
+          <li>Customer Service</li>
+          <li>Chat With Us</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <ul>
+          <li> Useful Links</li>
+          <li>Sign in / Register</li>
+          <li>Chess Rules</li>
+          <li>Winners</li>
+          <li>Rewards</li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <ul>
+          <li>About</li>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+
+      <div class="bottom">
+        <ul>
+          <li>Social-Media</li>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+          </svg>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/navbar.js"></script>
+  <script src="../scripts/article.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>
