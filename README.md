@@ -60,7 +60,7 @@ Feel free to explore the deployed links to experience the Multilayer Chess Game 
 
 To run the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Lokendra-debug/Chess-Battles`
+1. Clone the repository: `git clone https://github.com/vaibhav-panwar/Chess-Battles`
 2. Open the Backend Folder to get your backend running
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
