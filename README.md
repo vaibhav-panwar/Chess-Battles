@@ -22,7 +22,7 @@ The project is built using a variety of technologies to ensure smooth functional
 
 ## Deployment Links
 
-- **Frontend Deployment**: The frontend of the Multilayer Chess Game is deployed on **Netlify**. You can access it [here](https://stirring-taiyaki-a29f97.netlify.app/).
+- **Frontend Deployment**: The frontend of the Multilayer Chess Game is deployed on **Netlify**. You can access it [here](https://whimsical-marshmallow-d2310e.netlify.app/).
 
 - **Backend Deployment**: The backend is deployed on **Heroku** to ensure a seamless multiplayer experience. Visit the backend at [https://chess-battles.onrender.com/].
 
